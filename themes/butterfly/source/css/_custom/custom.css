@@ -80,43 +80,43 @@
 /* 字体引入 */
 @font-face {
   font-family: YSHST;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/优设好身体.woff2);
+  src: url(https://mumlpub.s3.bitiful.net/fonts/youshe.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: MiSans;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/MiSans.woff2);
+  src: url(https://mumlpub.s3.bitiful.net/fonts/MiSans.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: HYTMR;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/HYTangMeiRen55W.woff2);
+  src: url(hhttps://mumlpub.s3.bitiful.net/fonts/HYTangMeiRen55W.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: LXGW;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/霞鹜文楷.woff2);
+  src: url(https://mumlpub.s3.bitiful.net/fonts/xialu.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: TTQHB;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/甜甜圈海报字体.woff2);
+  src: url(https://mumlpub.s3.bitiful.net/fonts/tiantianquan.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: Consolas_1;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/Consolas.woff2);
+  src: url(https://mumlpub.s3.bitiful.net/fonts/Consolas.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: ZhuZiAWan;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/ZhuZiAWan2.woff2);
+  src: url(https://mumlpub.s3.bitiful.net/fonts/ZhuZiAWan2.woff2);
   font-display: swap;
 }
 
@@ -2129,7 +2129,7 @@ li.categoryBar-list-item {
   }
 }
 
-/* By Fomalhaut版权大小 */
+/* 版权大小 */
 .copyright {
   font-size: 16px;
 }

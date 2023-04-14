@@ -252,13 +252,13 @@ git push
 <!-- tab 示例源码 -->
 ```Markdown
 # 在线图片
-![code](https://cdn.jsdelivr.net/gh/fomalhaut1998/markdown_pic/img/code.png)
+![code](https://mumlpub.s3.bitiful.net/backgrounds/default_cover.webp)
 ```
 <!-- endtab -->
 
 <!-- tab 渲染演示 -->
 在线图片:
-![code](https://cdn.jsdelivr.net/gh/fomalhaut1998/markdown_pic/img/code.png)
+![code](https://mumlpub.s3.bitiful.net/backgrounds/default_cover.webp)
 <!-- endtab -->
 
 {% endtabs %}
@@ -1232,21 +1232,6 @@ Any content (support inline tags too.io).
 {% endbtns %}
 ```
 
-3.圆形图标 + 标题 + 描述 + 图片 + 网格5列 + 居中
-```markdown
-{% btns circle center grid5 %}
-<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  {% p red, 专业版 %}
-  <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'>
-</a>
-<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  {% p green, 免费版 %}
-  <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'>
-</a>
 {% endbtns %}
 ```
 <!-- endtab -->
@@ -1266,206 +1251,7 @@ Any content (support inline tags too.io).
 {% cell 下载源码, /, fas fa-download %}
 {% cell 查看文档, /, fas fa-book-open %}
 {% endbtns %}
-3.圆形图标 + 标题 + 描述 + 图片 + 网格5列 + 居中
-{% btns circle center grid5 %}
-<a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  {% p red, 专业版 %}
-  <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'>
-</a>
-<a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  {% p green, 免费版 %}
-  <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'>
-</a>
 {% endbtns %}
-<!-- endtab -->
-
-{% endtabs %}
-
-
-
-## 2.12 github卡片 ghcard
-
-{% tabs 分栏 %}
-
-<!-- tab 标签语法 -->
-
-```Markdown
-{% ghcard 用户名, 其它参数（可选） %}
-{% ghcard 用户名/仓库, 其它参数（可选） %}
-```
-
-<!-- endtab -->
-
-<!-- tab 参数配置 -->
-
-使用`,`分割各个参数。写法为：`参数名=参数值`
-以下只写几个常用参数值。
-
-| **参数名**    | 取值                                                         | 释义                             |
-| ------------- | ------------------------------------------------------------ | -------------------------------- |
-| hide          | stars,commits,prs,issues,contribs                            | 隐藏指定统计                     |
-| count_private | true                                                         | 将私人项目贡献添加到总提交计数中 |
-| show_icons    | true                                                         | 显示图标                         |
-| theme         | 查阅:[Available Themes](https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md) | 主题                             |
-
-<!-- endtab -->
-
-<!-- tab 示例源码 -->
-
-1.用户信息卡片
-
-```Markdown
-| {% ghcard fomalhaut1998 %} | {% ghcard fomalhaut1998, theme=vue %} |
-| -- | -- |
-| {% ghcard fomalhaut1998, theme=buefy %} | {% ghcard fomalhaut1998, theme=solarized-light %} |
-| {% ghcard fomalhaut1998, theme=onedark %} | {% ghcard fomalhaut1998, theme=solarized-dark %} |
-| {% ghcard fomalhaut1998, theme=algolia %} | {% ghcard fomalhaut1998, theme=calm %} |
-```
-
-2.仓库信息卡片
-
-```markdown
-| {% ghcard volantis-x/hexo-theme-volantis %} | {% ghcard volantis-x/hexo-theme-volantis, theme=vue %} |
-| -- | -- |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=buefy %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-light %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-dark %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis, theme=calm %} |
-```
-
-<!-- endtab -->
-
-<!-- tab 渲染演示 -->
-1.用户信息卡片
-
-| {% ghcard fomalhaut1998 %} | {% ghcard fomalhaut1998, theme=vue %} |
-| -- | -- |
-| {% ghcard fomalhaut1998, theme=buefy %} | {% ghcard fomalhaut1998, theme=solarized-light %} |
-| {% ghcard fomalhaut1998, theme=onedark %} | {% ghcard fomalhaut1998, theme=solarized-dark %} |
-| {% ghcard fomalhaut1998, theme=algolia %} | {% ghcard fomalhaut1998, theme=calm %} |
-
-2.仓库信息卡片
-
-| {% ghcard volantis-x/hexo-theme-volantis %} | {% ghcard volantis-x/hexo-theme-volantis, theme=vue %} |
-| -- | -- |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=buefy %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-light %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=onedark %} | {% ghcard volantis-x/hexo-theme-volantis, theme=solarized-dark %} |
-| {% ghcard volantis-x/hexo-theme-volantis, theme=algolia %} | {% ghcard volantis-x/hexo-theme-volantis, theme=calm %} |
-
-<!-- endtab -->
-
-{% endtabs %}
-
-## 2.13 github徽标 ghbdage
-
-
-
-{% tabs 分栏 %}
-
-<!-- tab 标签语法 -->
-
-```Markdown
-{% bdage [right],[left],[logo]||[color],[link],[title]||[option] %}
-```
-
-<!-- endtab -->
-
-<!-- tab 配置参数 -->
-
-1. `left`：徽标左边的信息，必选参数。
-2. `right`: 徽标右边的信息，必选参数，
-3. `logo`：徽标图标，图标名称详见[simpleicons](https://simpleicons.org/)，可选参数。
-4. `color`：徽标右边的颜色，可选参数。
-5.  `link`：指向的链接，可选参数。
-6. `title`：徽标的额外信息，可选参数。主要用于优化SEO，但`object`标签不会像`a`标签一样在鼠标悬停显示`title`信息。
-7. `option`：自定义参数，支持[shields.io](https://shields.io/)的全部API参数支持，具体参数可以参看上文中的拓展写法示例。形式为`name1=value2&name2=value2`。
-
-<!-- endtab -->
-
-<!-- tab 示例源码 -->
-
-1.基本参数,定义徽标左右文字和图标
-
-```Markdown
-{% bdage Theme,Butterfly %}
-{% bdage Frame,Hexo,hexo %}
-```
-
-2.信息参数，定义徽标右侧内容背景色，指向链接
-
-```markdown
-{% bdage CDN,JsDelivr,jsDelivr||abcdef,https://metroui.org.ua/index.html,本站使用JsDelivr为静态资源提供CDN加速 %}
-//如果是跨顺序省略可选参数，仍然需要写个逗号,用作分割
-{% bdage Source,GitHub,GitHub||,https://github.com/ %}
-```
-
-3.拓展参数，支持shields的API的全部参数内容
-
-```markdown
-{% bdage Hosted,Vercel,Vercel||brightgreen,https://vercel.com/,本站采用双线部署，默认线路托管于Vercel||style=social&logoWidth=20 %}
-//如果是跨顺序省略可选参数组，仍然需要写双竖线||用作分割
-{% bdage Hosted,Vercel,Vercel||||style=social&logoWidth=20&logoColor=violet %}
-```
-
-<!-- endtab -->
-
-<!-- tab 渲染演示 -->
-1.基本参数,定义徽标左右文字和图标
-
-{% bdage Theme,Butterfly %}
-{% bdage Frame,Hexo,hexo %}
-
-2.信息参数，定义徽标右侧内容背景色，指向链接
-
-{% bdage CDN,JsDelivr,jsDelivr||abcdef,https://metroui.org.ua/index.html,本站使用JsDelivr为静态资源提供CDN加速 %}
-//如果是跨顺序省略可选参数，仍然需要写个逗号,用作分割
-{% bdage Source,GitHub,GitHub||,https://github.com/ %}
-
-3.拓展参数，支持shields的API的全部参数内容
-
-{% bdage Hosted,Vercel,Vercel||brightgreen,https://vercel.com/,本站采用双线部署，默认线路托管于Vercel||style=social&logoWidth=20 %}
-//如果是跨顺序省略可选参数组，仍然需要写双竖线||用作分割
-{% bdage Hosted,Vercel,Vercel||||style=social&logoWidth=20&logoColor=violet %}
-<!-- endtab -->
-
-{% endtabs %}
-
-## 2.14 网站卡片 sites
-
-{% tabs 分栏 %}
-
-<!-- tab 标签语法 -->
-```Markdown
-{% sitegroup %}
-{% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %}
-{% site 标题, url=链接, screenshot=截图链接, avatar=头像链接（可选）, description=描述（可选） %}
-{% endsitegroup %}
-```
-<!-- endtab -->
-
-<!-- tab 示例源码 -->
-```Markdown
-{% sitegroup %}
-{% site xaoxuu, url=https://xaoxuu.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/avatar/avatar.png, description=简约风格 %}
-{% site inkss, url=https://inkss.cn, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
-{% site MHuiG, url=https://blog.mhuig.top, screenshot=https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png, avatar=https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png, description=这是一段关于这个网站的描述文字 %}
-{% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
-{% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png, avatar=https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png, description=这是一段关于这个网站的描述文字 %}
-{% endsitegroup %}
-```
-<!-- endtab -->
-
-<!-- tab 渲染演示 -->
-{% sitegroup %}
-{% site fomalhaut1998, url=https://fomalhaut1998.com, screenshot=https://i.loli.net/2020/08/21/VuSwWZ1xAeUHEBC.jpg, avatar=https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/avatar/avatar.png, description=简约风格 %}
-{% site inkss, url=https://inkss.cn, screenshot=https://i.loli.net/2020/08/21/Vzbu3i8fXs6Nh5Y.jpg, avatar=https://cdn.jsdelivr.net/gh/inkss/common@master/static/web/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
-{% site MHuiG, url=https://blog.mhuig.top, screenshot=https://i.loli.net/2020/08/22/d24zpPlhLYWX6D1.png, avatar=https://cdn.jsdelivr.net/gh/MHuiG/imgbed@master/data/p.png, description=这是一段关于这个网站的描述文字 %}
-{% site Colsrch, url=https://colsrch.top, screenshot=https://i.loli.net/2020/08/22/dFRWXm52OVu8qfK.png, avatar=https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg, description=这是一段关于这个网站的描述文字 %}
-{% site Linhk1606, url=https://linhk1606.github.io, screenshot=https://i.loli.net/2020/08/21/3PmGLCKicnfow1x.png, avatar=https://i.loli.net/2020/02/09/PN7I5RJfFtA93r2.png, description=这是一段关于这个网站的描述文字 %}
-{% endsitegroup %}
 <!-- endtab -->
 
 {% endtabs %}
