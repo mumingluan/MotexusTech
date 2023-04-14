@@ -8,26 +8,8 @@ menu:
     归档: /archives/ || icon-guidang1 || faa-tada
     标签: /tags/ || icon-sekuaibiaoqian || faa-tada
     分类: /categories/ || icon-fenlei || faa-tada
-  休闲 || icon-pinweishenghuo || faa-tada || hide:
-    八音盒: /life/music/ ||icon-yinle || faa-tada
-    影院: /life/movies/ ||icon-dianying1 || faa-tada
-    游戏: /life/games/ || icon-youxishoubing || faa-tada
-  八宝箱 || icon-xiangzi || faa-tada || hide:
-    画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
-    动画: /box/animation/ || icon-nvwumao || faa-tada
-    网址导航: /box/nav/ || icon-zhifengche || faa-tada
-  社交 || icon-shejiaoxinxi || faa-tada || hide:
-    朋友圈: /social/fcircle/ || icon-pengyouquan || faa-tada
-    留言板: /comments/ || icon-liuyan || faa-tada
-    友人帐: /social/link/ || icon-lianjie || faa-tada
-  网站 || icon-wangye || faa-tada || hide:
-    网站统计: /site/census/ || icon--tongjibiao || faa-tada
-    文章统计: /site/echarts/ || icon-shujutongji1 || faa-tada
-    旧时光: /site/time/ || icon-xianxingshalou || faa-tada
-  个人 || icon-maoliang || faa-tada || hide:
-    唠叨: /personal/bb/ || icon-qunliaotian || faa-tada
-    恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
-    关于: /personal/about/ || icon-paperplane || faa-tada
+  留言板: /comments/ || icon-liuyan || faa-tada
+  恋爱小屋: /love/ || icon-love-sign || faa-tada
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -39,7 +21,7 @@ highlight_shrink: false # true: shrink the code blocks / false: expand the code 
 highlight_height_limit: 230 # unit: px
 code_word_wrap: false
 
-# copy settings
+# copy settings 
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
 copy:
   enable: true
@@ -51,22 +33,10 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  # Github: https://github.com/fomalhaut1998 || icon-github || faa-tada
-  微信: /assets/QRCode.jpg || icon-weixin || faa-tada
-  QQ: https://res.abeim.cn/api/qq/?qq=1174008660 || icon-QQ || faa-tada
-  B站: https://space.bilibili.com/220757832 || icon-bilibili || faa-tada
-  QQ邮箱: mailto:1174008660@qq.com || icon-youxiang || faa-tada
-  力扣: https://leetcode.cn/u/fomalhaut1998 || icon-leetcode || faa-tada
-  # 微博: https://weibo.com/u/6473136435 || icon-weibo || faa-tada
-  # 知乎: https://www.zhihu.com/people/liang-jia-chao-19 || icon-shejiaotubiao-10 || faa-tada
-  # RSS: /atom.xml || icon-RSS || faa-tada
-
-  # iconfont icon-github: https://github.com/fomalhaut1998 || Github
-  # iconfont icon-youjian: mailto:1174008660@qq.com || QQ邮箱
-  # iconfont icon-tv: https://space.bilibili.com/220757832 || B站
-  # iconfont icon-leetcode: https://leetcode.cn/u/fomalhaut1998/ || 力扣
-  # iconfont icon-weibo: https://weibo.com/u/6473136435 || 微博
-  # iconfont icon-shejiaotubiao-46: https://www.zhihu.com/people/liang-jia-chao-19 || 知乎
+  Github: https://github.com/mumingluan || icon-github || faa-tada
+  微信: https://mumlpub.s3.bitiful.net/contact/mumingluan.png || icon-weixin || faa-tada
+  QQ: https://res.abeim.cn/api/qq/?qq=958325933 || icon-QQ || faa-tada
+  B站: https://space.bilibili.com/614446061 || icon-bilibili || faa-tada
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
@@ -113,7 +83,7 @@ favicon:
 
 # Avatar (頭像)
 avatar:
-  img: https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp
+  img: https://mumlpub.s3.bitiful.net/avatar/kazuha.jpg
   effect: false
 
 # Disable all banner image
@@ -156,15 +126,13 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://source.fomal.cc/img/default_cover_14.webp
-    # ...
+    - https://mumlpub.s3.bitiful.net/backgrounds/default_cover.webp
 
 # A simple 404 page
 error_404:
   enable: true
   subtitle: "此页面不存在哦٩͡[๏̯͡๏]"
-  # https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
-  background: /assets/404_1.jpg
+  background: /assets/404lost.jpg
 
 post_meta:
   page: # Home Page
@@ -221,15 +189,12 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: true
+  enable: false
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
-    - img: https://tuchuang.voooe.cn/images/2023/01/04/2.webp
+    - img: 
       link:
-      text: 微信
-    - img: https://tuchuang.voooe.cn/images/2023/01/04/20f8e49805975b8f8.webp
-      link:
-      text: 支付宝
+      text: 
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -253,11 +218,11 @@ photofigcaption: false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: 2
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
-  enable: true
+  enable: false
   style: flat # style: simple/flat
   limit_day: 365 # When will it be shown
   position: top # position: top/bottom
@@ -292,7 +257,6 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42
   use:
-    - Twikoo # Valine,Disqus,...
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -303,7 +267,6 @@ comments:
 # disqus
 # https://disqus.com/
 disqus:
-  # fomalhaut1998
   shortname:
   apikey: # For newest comments widget
 
@@ -318,7 +281,7 @@ disqusjs:
 # livere (來必力)
 # https://www.livere.com/
 livere:
-  uid: # MTAyMC81NzAyNy8zMzQ5MQ==
+  uid:
 
 # gitalk
 # https://github.com/gitalk/gitalk
@@ -446,8 +409,8 @@ crisp:
 # --------------------------------------
 footer:
   owner:
-    enable: true
-    since: 2022
+    enable: false
+    since: 2023
   custom_text:
   copyright: false # Copyright of theme and framework
 
@@ -668,11 +631,9 @@ subtitle:
   # source: 2  調用一句網（簡體） http://yijuzhan.com/
   # source: 3  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: false
+  source: 3
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - "Welcome to Fomalhaut🥝のTiny Home!🤣🤣🤣"
-    - "Hope you have a nice day!🍭🍭🍭"
 
 # Loading Animation (加載動畫)
 # preloader: false
@@ -699,13 +660,13 @@ aside:
     enable: true
     description:
     button:
-      enable: true
-      icon: # fab fa-github
-      text: 前往小窝
-      link: https://github.com/fomalhaut1998
+      enable: false
+      icon: fab fa-github
+      text: 
+      link: 
   card_announcement:
     enable: true
-    content: <center><b>--- 主域名 ---<br><a href="https://www.fomal.cc" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">fomal.cc</font></a>&nbsp;|&nbsp;<a href="https://www.fomal.cn" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">fomal.cn</font></a><br>--- 备用域名 ---<br><a href="https://netlify.fomal.cc" title="此线路部署于Netlify" class="anno_content"><font color="#5ea6e5">netlify.fomal.cc</font></a><br><a href="https://cloudflare.fomal.cc" title="此线路部署于Cloudflare" class="anno_content"><font color="#5ea6e5">cloudflare.fomal.cc</font></a><br>--- 网站安卓APP ---<br>🍧<a href="https://lskypro.acozycotage.net/Fomalhaut/Fomalhaut.apk" title="点这里可以下载网站的安卓APP" class="anno_content"><font color="#5ea6e5">点此下载</font></a>🍧</b></center>
+    content: 欢迎来到 MoTexus Technology！
   card_recent_post:
     enable: false
     limit: 3 # if set 0 will show all
@@ -736,7 +697,7 @@ aside:
   card_weibo:
     enable: false
   card_friend_link: #友链通讯录
-    enable: true
+    enable: false
     sort_order: # Don't modify the setting unless you know
 
 # busuanzi count for PV / UV in site
@@ -869,8 +830,8 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
-  enable: false
-  field: post # site/post
+  enable: true
+  field: site # site/post
 
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
@@ -959,10 +920,6 @@ CDN:
     # utils:
     # translate: https://cdn1.tianli0.top/npm/js-heo@1.0.6/translate/tw_cn.js
     # local_search:
-    # algolia_js:
-    algolia_search_v4: https://cdn.staticfile.org/algoliasearch/4.14.3/algoliasearch-lite.umd.min.js
-    instantsearch_v4: https://cdn.staticfile.org/instantsearch.js/4.49.2/instantsearch.production.min.js
-    pjax: https://lib.baomitu.com/pjax/0.2.8/pjax.min.js
     # gitalk: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.js
     # gitalk_css: https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/gitalk/1.7.2/gitalk.min.css
     # blueimp_md5:
@@ -1083,8 +1040,8 @@ envelope_comment:
     - 本站有哪些做得好或者不好的地方？
     - 或者你有什么改进的建议？
     - 又或者你有什么具体的问题需要咨询？
-    - 都可以在下方评论区留言哦~~~
-  bottom: F小站站长亲自为您服务！ #仅支持单行文本
+    - 都可以在评论留言哦~
+  bottom: 站长亲自为您服务 QwQ #仅支持单行文本
   height: #1050px，信封划出的高度
   path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
   front_matter: #【可选】comments页面的 front_matter 配置
@@ -1097,7 +1054,7 @@ flink_style: volantis # butterfly | volantis | flexcard
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
   flink: /assets/r1.jpg
-  post_page: /assets/r2.jpg
+  post_page: /assets/post404.jpg
 
 # 标签外挂
 # tag-plugins-plus

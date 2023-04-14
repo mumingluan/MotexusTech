@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Fomalhaut🥝
+title: MoTexus Technology🥝
 subtitle: 
-description: 'Future is now 🍭🍭🍭'
-keywords: 'Java,MySQL,算法,代码,博客,Butterfly,Hexo,Fomalhaut🥝,Fomalhaut'
-author: Fomalhaut🥝
+description: '枫散禁忌知识！'
+keywords: 'Genshin,GenshinImpact,Arknights,StarRail,PrivateServer,Protobuf,Java'
+author: 穆鸣鸾
 language: zh-CN
 timezone: ''
 
@@ -18,7 +18,7 @@ abbrlink:
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.fomal.cc/
+url: https://www.motexus.tech/
 permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
@@ -123,37 +123,7 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  - type: git
-    repository:  # 这里写上你的Github地址
-    branch: main
-  # - type: baidu_url_submitter
-  # - type: git
-  #   #repo改为repo: git@域名:/var/repo/hexo.git
-  #   repo: git@43.249.9.21:/var/repo/hexo.git
-  #   branch: main
-
-# hexo-algolia(匹配标题)
-# algolia:
-#   applicationID: 78BL6ZB8EC
-#   apiKey: 980d4a6ff043d026e5d9bf53e18c533a
-#   indexName: index_1
-
-# hexo-algoliasearch(可以匹配内容)
-algolia:
-  appId: ""
-  apiKey: ""
-  adminApiKey: ""
-  chunkSize: 
-  indexName: ""
-  fields:
-    - content:strip:truncate,0,30000
-    - excerpt:strip
-    - gallery
-    - permalink
-    - photos
-    - slug
-    - tags
-    - title
+  - type: 
 
 
 # 首页轮播图
@@ -182,85 +152,20 @@ search:
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/
-#RSS订阅
+
+# RSS订阅
 plugin:
   - hexo-generator-feed
-#Feed Atom
+# Feed Atom
 feed:
 type: atom
 path: atom.xml
 limit: 20
 
-
-# 站点地图
-sitemap:
-  path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
-
-  
-# 主动推送百度，被百度收录
-baidu_url_submit:
-  count: 10 # 提交最新的10个链接
-  host:  # 百度站长平台中注册的域名
-  token:  # 秘钥，百度站长平台 > 推送接口 > 接口调用地址中token字段
-  path:  # 文本文档的地址， 新链接会保存在此文本文档里，不用改
-
-
 nofollow:
   enable: false
   field: site
   exclude: ''
-
-
-# github提交日志
-# hexo-filter-gitcalendar
-# see https://akilar.top/posts/1f9c68c9/
-gitcalendar:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: /site/census/ # 应用页面
-  # butterfly挂载容器
-  layout: # 挂载容器类型
-    type: id
-    name: gitZone
-    index: 0
-  # volantis挂载容器
-  # layout:
-  #   type: class
-  #   name: l_main
-  #   index: 0
-  # matery挂载容器
-  # layout:
-  #   type: id
-  #   name: indexCard
-  #   index: 0
-  # mengd挂载容器
-  # layout:
-  #   type: class
-  #   name: content
-  #   index: 0
-  # simplemode: true
-  user:  #git用户名
-  apiurl: ''
-  minheight:
-    pc: 320px #桌面端最小高度
-    mibile: 0px #移动端最小高度
-  color: "['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9']"
-  # "['rgb(145, 145, 145, 0.2)', '#c6ecc1', '#a0e2bb', '#1fc7b6', '#70c5d3', '#60a2ce', '#507ac9', '#4356c5', '#423cc4', '#5b3abc', '#7138b6']" # 冷色系温度色调
-  # "['rgb(145, 145, 145, 0.2)', '#c6ecc1', '#a0e2bb', '#1fc7b6', '#70c5d3', '#60a2ce', '#507ac9', '#4356c5', '#423cc4', '#5b3abc', '#7138b6']" # 冷色系温度色调
-  # "['#ebedf0', '#cdefec', '#a9e4de', '#1fc7b6', '#65cfc5', '#4dc8bb', '#39bbae', '#319d93', '#278178', '#216962', '#1b5852']" #蒂芙尼蓝色调
-  # "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
-  # color: "['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f']" #浅紫色调
-  # color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
-  # color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
-  container: .recent-post-item(style='width:100%;height:auto;padding:10px;') #父元素容器，需要使用pug语法
-  gitcalendar_css: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css
-  gitcalendar_js: https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js
-
-# 新版的搜索插件
-plugins:
-  - hexo-algoliasearch
 
 # 小冰分类磁贴
 magnet:
@@ -270,23 +175,8 @@ magnet:
   type: categories
   devide: 3
   display:
-    - name: 算法
-      display_name: 小Fの算法学习笔记
-      icon: 🍡
-    - name: 计算机基础
-      display_name: 小Fの计算机基础笔记
-      icon: 🍼
-    - name: 魔改教程
-      display_name: 小Fの博客魔改教程
-      icon: 🍉
-    - name: Java基础
-      display_name: 小FのJava基础笔记
-      icon: 🍟
-    - name: 数据库
-      display_name: 小Fの数据库笔记
-      icon: 🍨
-    - name: 演示
-      display_name: 小Fの案例演示笔记
+    - name: 自留
+      display_name: 站长の自留笔记
       icon: 🍥
   color_setting:
     text_color: black # 文字默认颜色

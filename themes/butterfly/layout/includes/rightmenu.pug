@@ -12,9 +12,9 @@
         a.rightMenu-item(href="javascript:rmf.copySelect();")
             i.fa.fa-copy
             span='复制'
-        a.rightMenu-item(href="javascript:window.open(\"https://www.baidu.com/s?wd=\"+window.getSelection().toString());window.location.reload();")
+        a.rightMenu-item(href="javascript:window.open(\"https://www.bing.com/search?q=\"+window.getSelection().toString());window.location.reload();")
             i.fa.fa-search
-            span='百度搜索'
+            span='必应搜索'
     .rightMenu-group.rightMenu-line.hide#menu-too
         a.rightMenu-item(href="javascript:window.open(window.getSelection().toString());window.location.reload();")
             i.fa.fa-link
@@ -61,9 +61,6 @@
             a.rightMenu-item(href="javascript:rmf.switchReadMode();")
                 i.fa.fa-book
                 span='阅读模式'
-        a.rightMenu-item(href="/personal/about/")
-            i.fa.fa-info-circle
-            span='关于博客'
         a.rightMenu-item(href="javascript:toggleWinbox();")
             i.fas.fa-cog
             span='美化设置'

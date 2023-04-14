@@ -1,12 +1,13 @@
 ---
-title: Markdown语法与外挂标签写法汇总
-description: 🥧本文汇总Markdown格式以及外挂标签在网页端的渲染效果，可作为文档进行查询
+title: 站点语法汇总
+description: 自留 Markdown 格式以及标签渲染效果
 mathjax: true
 tags:
   - Markdown
   - 外挂标签
+  - 站长自留
 categories:
-  - 演示
+  - 自留
 abbrlink: 2013454d
 sticky: 2
 swiper_index: 2
@@ -250,16 +251,12 @@ git push
 
 <!-- tab 示例源码 -->
 ```Markdown
-# 本地图片
-<img src="/assets/pusheencode.webp" alt="示例图片" style="zoom:50%;" />
 # 在线图片
 ![code](https://cdn.jsdelivr.net/gh/fomalhaut1998/markdown_pic/img/code.png)
 ```
 <!-- endtab -->
 
 <!-- tab 渲染演示 -->
-本地图片:
-<img src="/assets/pusheencode.webp" alt="示例图片" style="zoom:50%;" />
 在线图片:
 ![code](https://cdn.jsdelivr.net/gh/fomalhaut1998/markdown_pic/img/code.png)
 <!-- endtab -->
