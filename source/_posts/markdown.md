@@ -1232,7 +1232,6 @@ Any content (support inline tags too.io).
 {% endbtns %}
 ```
 
-{% endbtns %}
 ```
 <!-- endtab -->
 
